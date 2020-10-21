@@ -3,10 +3,14 @@
 
 function toggleNavigation() {
     let menu = document.getElementById("nav");
+    let icon = document.querySelector(".material-icons")
     if (menu.className === "navbar") {
       menu.className += " responsive";
+    
+      icon.textContent = "close";
     } else {
       menu.className = "navbar";
+      icon.textContent = "menu";
     }
   }
 // slider
